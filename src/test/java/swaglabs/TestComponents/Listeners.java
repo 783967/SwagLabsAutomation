@@ -1,7 +1,5 @@
 package swaglabs.TestComponents;
 
-import java.io.IOException;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -13,7 +11,8 @@ import com.aventstack.extentreports.Status;
 
 import swaglabs.resources.ExtentReporterNG;
 
-public class Listeners extends BaseTest implements ITestListener{
+public class Listeners extends BasePage implements ITestListener{
+	WebDriver driver = new DriverFactory().getDriver();
 	ExtentTest test;
 	ExtentReports extent = ExtentReporterNG.getReportObject();
 	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>(); //Thread safe
@@ -50,8 +49,8 @@ public class Listeners extends BaseTest implements ITestListener{
 		String filePath = null;
 		try {
 			
-			filePath = getScreenshot(result.getMethod().getMethodName(),driver);
-		} catch (IOException e) {
+		filePath = getScreenshot(result.getMethod().getMethodName(),driver);
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
