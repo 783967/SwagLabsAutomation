@@ -13,7 +13,8 @@ public class HomePageSteps{
 	private static WebDriver driver = DriverFactory.getDriver();
 	
 	public void loginToSwagLabs() {
-		commonMethods.launchUrl("https://www.saucedemo.com/");
+		String applicationUrl = commonMethods.getPropertyValue("url");
+		commonMethods.launchUrl(applicationUrl);
 		commonMethods.logInSwagLabs(commonMethods.getPropertyValue("swglabsUserName"), commonMethods.getPropertyValue("swaglabsPassword"));
 	}
 	

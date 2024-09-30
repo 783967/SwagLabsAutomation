@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-29T23:25:35 IST" name="Default suite" finished-at="2024-09-29T23:25:44 IST" duration-ms="8862">
+  <suite started-at="2024-09-30T13:01:14 IST" name="Default suite" finished-at="2024-09-30T13:01:25 IST" duration-ms="11285">
     <groups>
     </groups>
-    <test started-at="2024-09-29T23:25:35 IST" name="Default test" finished-at="2024-09-29T23:25:44 IST" duration-ms="8862">
+    <test started-at="2024-09-30T13:01:14 IST" name="Default test" finished-at="2024-09-30T13:01:25 IST" duration-ms="11285">
       <class name="swaglabs.ai.tests.validateHomePageTest">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:swaglabs.ai.tests.validateHomePageTest@4fb0f2b9]" started-at="2024-09-29T23:25:35 IST" name="initializeDriver" finished-at="2024-09-29T23:25:39 IST" duration-ms="4257" status="PASS">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:swaglabs.ai.tests.validateHomePageTest@4fb0f2b9]" started-at="2024-09-30T13:01:14 IST" name="initializeDriver" finished-at="2024-09-30T13:01:20 IST" duration-ms="6248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="validateOfAddSauceLabsBackPackIntoCartFromHomePageTest()[pri:0, instance:swaglabs.ai.tests.validateHomePageTest@4fb0f2b9]" started-at="2024-09-29T23:25:39 IST" name="validateOfAddSauceLabsBackPackIntoCartFromHomePageTest" finished-at="2024-09-29T23:25:42 IST" duration-ms="2983" status="PASS">
+        <test-method signature="validateOfAddSauceLabsBackPackIntoCartFromHomePageTest()[pri:0, instance:swaglabs.ai.tests.validateHomePageTest@4fb0f2b9]" started-at="2024-09-30T13:01:20 IST" name="validateOfAddSauceLabsBackPackIntoCartFromHomePageTest" finished-at="2024-09-30T13:01:23 IST" duration-ms="3376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateOfAddSauceLabsBackPackIntoCartFromHomePageTest -->
-        <test-method signature="validateUserLandedInSwagLabsHomePage()[pri:0, instance:swaglabs.ai.tests.validateHomePageTest@4fb0f2b9]" started-at="2024-09-29T23:25:42 IST" name="validateUserLandedInSwagLabsHomePage" finished-at="2024-09-29T23:25:42 IST" duration-ms="377" status="PASS">
+        <test-method signature="validateUserLandedInSwagLabsHomePage()[pri:0, instance:swaglabs.ai.tests.validateHomePageTest@4fb0f2b9]" started-at="2024-09-30T13:01:23 IST" name="validateUserLandedInSwagLabsHomePage" finished-at="2024-09-30T13:01:24 IST" duration-ms="373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUserLandedInSwagLabsHomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:swaglabs.ai.tests.validateHomePageTest@4fb0f2b9]" started-at="2024-09-29T23:25:42 IST" name="tearDown" finished-at="2024-09-29T23:25:44 IST" duration-ms="1192" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:swaglabs.ai.tests.validateHomePageTest@4fb0f2b9]" started-at="2024-09-30T13:01:24 IST" name="tearDown" finished-at="2024-09-30T13:01:25 IST" duration-ms="1237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
