@@ -8,6 +8,7 @@
           <include name="initializeDriver"/>
           <include name="validateOfAddSauceLabsBackPackIntoCartFromHomePageTest"/>
           <include name="tearDown"/>
+          <include name="validateUserLandedInSwagLabsHomePage"/>
         </methods>
       </class> <!-- swaglabs.ai.tests.validateHomePageTest -->
     </classes>
