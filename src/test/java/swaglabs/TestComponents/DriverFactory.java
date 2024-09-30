@@ -13,7 +13,7 @@ public class DriverFactory {
 	private static WebDriver driver = null;
 	BasePage basePage = new BasePage();
 	
-	public WebDriver getDriver() {
+	public static WebDriver getDriver() {
 		return driver;
 	}
 	

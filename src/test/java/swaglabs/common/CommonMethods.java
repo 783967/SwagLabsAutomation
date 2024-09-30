@@ -16,7 +16,7 @@ import swaglabs.pageobjects.SwagLabsHomePage;
 
 public class CommonMethods extends BasePage {
 	
-	WebDriver driver;
+	private static WebDriver driver;
      public CommonMethods() { 
     	 try { 
     		 driver = new DriverFactory().getDriver(); 
@@ -65,7 +65,18 @@ public class CommonMethods extends BasePage {
 		
 		SwagLabsHomePage swagLabsHomePage = new SwagLabsHomePage(driver);
 		waitForElementContainText(swagLabsHomePage.logoHeading, "Swag Labs", 10);
-		//Assert.assertEquals(swagLabsHomePage.logoHeading.getText().trim(), "Swag Labs");
+	}
+	
+	public <T extends WebElement> void addToCartAndVerifyItemAdded(T addToCartElement, T removeFromCartElement) {
+		SwagLabsHomePage swagLabsHomePage = new SwagLabsHomePage(driver);
+		int cartCount = 0;
+		if(!swagLabsHomePage.emptyCartBadge.getText().isEmpty())
+		  cartCount = Integer.parseInt(swagLabsHomePage.emptyCartBadge.getText());
+		
+		click(addToCartElement);
+		waitForElementContainText(removeFromCartElement, "Remove", 10);
+		
+		waitForElementContainText(swagLabsHomePage.nonEmptyCartBadge, String.valueOf(cartCount+1), 10);
 	}
 	
 	

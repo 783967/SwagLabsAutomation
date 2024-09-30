@@ -13,4 +13,11 @@ public class validateHomePageTest extends DriverFactory {
 		homePageSteps.loginToSwagLabs();
 	}
 	
+	@Test
+	public void validateOfAddSauceLabsBackPackIntoCartFromHomePageTest() {
+		HomePageSteps homePageSteps = new HomePageSteps();
+		homePageSteps.loginToSwagLabs();
+		homePageSteps.addSauceLabsBackpackIntoCartAndVerify();
+	}
+	
 }

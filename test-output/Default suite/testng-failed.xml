@@ -5,7 +5,9 @@
     <classes>
       <class name="swaglabs.ai.tests.validateHomePageTest">
         <methods>
-          <include name="validateUserLandedInSwagLabsHomePage"/>
+          <include name="initializeDriver"/>
+          <include name="validateOfAddSauceLabsBackPackIntoCartFromHomePageTest"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- swaglabs.ai.tests.validateHomePageTest -->
     </classes>
