@@ -16,7 +16,7 @@ public class DriverFactory {
 	public static WebDriver getDriver() {
 		return driver;
 	}
-	
+		
 	@BeforeTest
 	public void initializeDriver() throws IOException
 	{
@@ -37,7 +37,6 @@ public class DriverFactory {
 		}
 		driver.manage().window().maximize();
 	}
-	
 	
 	@AfterTest()
 	public void tearDown()
