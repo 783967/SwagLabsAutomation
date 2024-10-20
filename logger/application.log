@@ -1,0 +1,68 @@
+2024-10-04 15:51:42,321 DEBUG [main] InternalLoggerFactory:89 - Using Log4J as the default logging framework
+2024-10-04 15:51:42,327 DEBUG [main] ResourceLeakDetector:129 - -Dio.netty.leakDetection.level: simple
+2024-10-04 15:51:42,327 DEBUG [main] ResourceLeakDetector:130 - -Dio.netty.leakDetection.targetRecords: 4
+2024-10-04 15:51:42,331 DEBUG [main] ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@78aa1f72
+2024-10-04 15:51:42,346 DEBUG [main] PlatformDependent0:496 - -Dio.netty.noUnsafe: false
+2024-10-04 15:51:42,347 DEBUG [main] PlatformDependent0:1000 - Java version: 21
+2024-10-04 15:51:42,348 DEBUG [main] PlatformDependent0:137 - sun.misc.Unsafe.theUnsafe: available
+2024-10-04 15:51:42,348 DEBUG [main] PlatformDependent0:161 - sun.misc.Unsafe.copyMemory: available
+2024-10-04 15:51:42,349 DEBUG [main] PlatformDependent0:193 - sun.misc.Unsafe.storeFence: available
+2024-10-04 15:51:42,349 DEBUG [main] PlatformDependent0:236 - java.nio.Buffer.address: available
+2024-10-04 15:51:42,350 DEBUG [main] PlatformDependent0:320 - direct buffer constructor: unavailable: java.nio.DirectByteBuffer.<init>(long,int)
+2024-10-04 15:51:42,351 DEBUG [main] PlatformDependent0:385 - java.nio.Bits.unaligned: available, true
+2024-10-04 15:51:42,352 DEBUG [main] PlatformDependent0:452 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @46ee7fe8
+2024-10-04 15:51:42,353 DEBUG [main] PlatformDependent0:482 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2024-10-04 15:51:42,353 DEBUG [main] PlatformDependent:1159 - sun.misc.Unsafe: available
+2024-10-04 15:51:42,361 DEBUG [main] PlatformDependent:1270 - maxDirectMemory: 4215275520 bytes (maybe)
+2024-10-04 15:51:42,361 DEBUG [main] PlatformDependent:1289 - -Dio.netty.tmpdir: C:\Users\2280571\AppData\Local\Temp (java.io.tmpdir)
+2024-10-04 15:51:42,362 DEBUG [main] PlatformDependent:1368 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2024-10-04 15:51:42,362 DEBUG [main] PlatformDependent:1119 - Platform: Windows
+2024-10-04 15:51:42,363 DEBUG [main] PlatformDependent:178 - -Dio.netty.maxDirectMemory: -1 bytes
+2024-10-04 15:51:42,363 DEBUG [main] PlatformDependent:185 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2024-10-04 15:51:42,364 DEBUG [main] CleanerJava9:71 - java.nio.ByteBuffer.cleaner(): available
+2024-10-04 15:51:42,364 DEBUG [main] PlatformDependent:205 - -Dio.netty.noPreferDirect: false
+2024-10-04 15:51:42,371 DEBUG [main] PlatformDependent:1010 - org.jctools-core.MpscChunkedArrayQueue: available
+2024-10-04 15:51:42,388 DEBUG [main] InternalThreadLocalMap:100 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2024-10-04 15:51:42,388 DEBUG [main] InternalThreadLocalMap:101 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2024-10-04 15:51:42,502 DEBUG [main] JdkSslContext:83 - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2024-10-04 15:51:42,502 DEBUG [main] JdkSslContext:84 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2024-10-04 15:51:42,513 DEBUG [main] GlobalEventExecutor:53 - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2024-10-04 15:51:42,526 DEBUG [main] MultithreadEventLoopGroup:44 - -Dio.netty.eventLoopThreads: 16
+2024-10-04 15:51:42,533 DEBUG [main] NioEventLoop:110 - -Dio.netty.noKeySetOptimization: false
+2024-10-04 15:51:42,533 DEBUG [main] NioEventLoop:111 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2024-10-04 15:51:42,577 DEBUG [main] PooledByteBufAllocator:157 - -Dio.netty.allocator.numHeapArenas: 16
+2024-10-04 15:51:42,578 DEBUG [main] PooledByteBufAllocator:158 - -Dio.netty.allocator.numDirectArenas: 16
+2024-10-04 15:51:42,578 DEBUG [main] PooledByteBufAllocator:160 - -Dio.netty.allocator.pageSize: 8192
+2024-10-04 15:51:42,578 DEBUG [main] PooledByteBufAllocator:165 - -Dio.netty.allocator.maxOrder: 9
+2024-10-04 15:51:42,578 DEBUG [main] PooledByteBufAllocator:169 - -Dio.netty.allocator.chunkSize: 4194304
+2024-10-04 15:51:42,578 DEBUG [main] PooledByteBufAllocator:170 - -Dio.netty.allocator.smallCacheSize: 256
+2024-10-04 15:51:42,578 DEBUG [main] PooledByteBufAllocator:171 - -Dio.netty.allocator.normalCacheSize: 64
+2024-10-04 15:51:42,578 DEBUG [main] PooledByteBufAllocator:172 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2024-10-04 15:51:42,578 DEBUG [main] PooledByteBufAllocator:173 - -Dio.netty.allocator.cacheTrimInterval: 8192
+2024-10-04 15:51:42,578 DEBUG [main] PooledByteBufAllocator:174 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2024-10-04 15:51:42,578 DEBUG [main] PooledByteBufAllocator:175 - -Dio.netty.allocator.useCacheForAllThreads: false
+2024-10-04 15:51:42,578 DEBUG [main] PooledByteBufAllocator:176 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2024-10-04 15:51:42,593 DEBUG [main] ByteBufUtil:88 - -Dio.netty.allocator.type: pooled
+2024-10-04 15:51:42,593 DEBUG [main] ByteBufUtil:97 - -Dio.netty.threadLocalDirectBufferSize: 0
+2024-10-04 15:51:42,593 DEBUG [main] ByteBufUtil:100 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2024-10-04 15:51:43,080 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:79 - -Dio.netty.processId: 22808 (auto-detected)
+2024-10-04 15:51:43,081 DEBUG [Forwarding newSession on session null to remote] NetUtil:148 - -Djava.net.preferIPv4Stack: false
+2024-10-04 15:51:43,082 DEBUG [Forwarding newSession on session null to remote] NetUtil:149 - -Djava.net.preferIPv6Addresses: false
+2024-10-04 15:51:43,086 DEBUG [Forwarding newSession on session null to remote] NetUtilInitializations:145 - Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+2024-10-04 15:51:43,087 DEBUG [Forwarding newSession on session null to remote] NetUtil:206 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2024-10-04 15:51:43,090 DEBUG [Forwarding newSession on session null to remote] DefaultChannelId:101 - -Dio.netty.machineId: e8:80:88:ff:fe:16:80:e0 (auto-detected)
+2024-10-04 15:51:43,128 DEBUG [AsyncHttpClient-1-2] AbstractByteBuf:63 - -Dio.netty.buffer.checkAccessible: true
+2024-10-04 15:51:43,129 DEBUG [AsyncHttpClient-1-2] AbstractByteBuf:64 - -Dio.netty.buffer.checkBounds: true
+2024-10-04 15:51:43,129 DEBUG [AsyncHttpClient-1-2] ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@70d487ac
+2024-10-04 15:51:43,146 DEBUG [AsyncHttpClient-1-2] Recycler:96 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2024-10-04 15:51:43,146 DEBUG [AsyncHttpClient-1-2] Recycler:97 - -Dio.netty.recycler.ratio: 8
+2024-10-04 15:51:43,146 DEBUG [AsyncHttpClient-1-2] Recycler:98 - -Dio.netty.recycler.chunkSize: 32
+2024-10-04 15:51:43,147 DEBUG [AsyncHttpClient-1-2] Recycler:99 - -Dio.netty.recycler.blocking: false
+2024-10-04 15:51:43,147 DEBUG [AsyncHttpClient-1-2] Recycler:100 - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2024-10-04 15:51:44,412 DEBUG [AsyncHttpClient-1-2] Brotli:38 - brotli4j not in the classpath; Brotli support will be unavailable.
+2024-10-04 15:51:44,597 DEBUG [main] ThreadLocalRandom:214 - -Dio.netty.initialSeedUniquifier: 0x81a0917e3a29be53
+2024-10-04 15:51:46,037  INFO [main] CommonMethods:38 - https://www.saucedemo.com/ is launched succesfully
+2024-10-04 15:51:46,409  INFO [main] CommonMethods:48 - Proxy element for: DefaultElementLocator 'By.cssSelector: #login-button' is clicked successfully
+2024-10-04 15:51:46,561  INFO [main] CommonMethods:64 - Swag Labs is present.
+2024-10-04 15:51:46,561  INFO [main] CommonMethods:75 - Logged in to SwagLabs
+2024-10-04 15:51:46,561  INFO [main] HomePageSteps:26 - Completed loginToSwagLabs
