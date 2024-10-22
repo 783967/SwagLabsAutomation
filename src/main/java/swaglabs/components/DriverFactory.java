@@ -1,4 +1,4 @@
-package swaglabs.TestComponents;
+package swaglabs.components;
 
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;

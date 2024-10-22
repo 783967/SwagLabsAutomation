@@ -1,10 +1,10 @@
-package swaglabs.stepDefinitions;
+package swaglabs.steps;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
-import swaglabs.TestComponents.BasePage;
-import swaglabs.TestComponents.DriverFactory;
+import swaglabs.components.BasePage;
+import swaglabs.components.DriverFactory;
 import swaglabs.common.CommonMethods;
 import swaglabs.pageobjects.SwagLabsHomePage;
 

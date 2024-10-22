@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="swaglabs.ai.tests.validateHomePageTest">
+      <class name="swaglabs.tests.validateHomePageTest">
         <methods>
           <include name="initializeDriver"/>
           <include name="tearDown"/>
           <include name="validateUserLandedInSwagLabsHomePage"/>
-          <include name="setUpLogger"/>
         </methods>
-      </class> <!-- swaglabs.ai.tests.validateHomePageTest -->
+      </class> <!-- swaglabs.tests.validateHomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

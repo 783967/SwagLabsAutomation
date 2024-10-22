@@ -1,4 +1,4 @@
-package swaglabs.TestComponents;
+package swaglabs.components;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -30,7 +30,7 @@ public class BasePage {
 		try {
 			Properties prop = new Properties();
 			FileInputStream fis = new FileInputStream(
-					System.getProperty("user.dir") + "//src//main//java//swaglabs//resources//GlobalData.properties");
+					System.getProperty("user.dir") + "//src//test//resources//swaglabs.properties");
 			prop.load(fis);
 			value = prop.getProperty(propertyKey);
 		} catch (IOException e) {

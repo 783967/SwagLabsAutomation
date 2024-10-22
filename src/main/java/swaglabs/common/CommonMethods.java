@@ -10,8 +10,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import swaglabs.TestComponents.BasePage;
-import swaglabs.TestComponents.DriverFactory;
+import swaglabs.components.BasePage;
+import swaglabs.components.DriverFactory;
 import swaglabs.pageobjects.LoginPage;
 import swaglabs.pageobjects.SwagLabsHomePage;
 
