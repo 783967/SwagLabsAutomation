@@ -17,6 +17,10 @@ public class DriverFactory {
 		return driver;
 	}
 		
+	/**
+	 * Initialize the driver
+	 * @throws IOException
+	 */
 	@BeforeTest
 	public void initializeDriver() throws IOException
 	{
@@ -38,6 +42,9 @@ public class DriverFactory {
 		driver.manage().window().maximize();
 	}
 	
+	/**
+	 * Quit the driver
+	 */
 	@AfterTest()
 	public void tearDown()
 	{

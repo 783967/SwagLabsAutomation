@@ -25,6 +25,11 @@ public class BasePage {
 		BasePage.logger = Logger.getLogger(clazz);
 	}
 
+	/**
+	 * Get property value
+	 * @param propertyKey
+	 * @return
+	 */
 	public String getPropertyValue(String propertyKey) {
 		String value = "";
 		try {

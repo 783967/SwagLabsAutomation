@@ -19,6 +19,9 @@ public class HomePageSteps{
 		logger = BasePage.getLogger();
 	}
 	
+	/**
+	 * Logged in to Swaglabs
+	 */
 	public void loginToSwagLabs() {
 		String applicationUrl = commonMethods.getPropertyValue("url");
 		commonMethods.launchUrl(applicationUrl);

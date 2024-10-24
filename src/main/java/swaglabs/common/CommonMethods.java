@@ -32,12 +32,20 @@ public class CommonMethods extends BasePage {
 		}
 	}
 
+	/**
+	 * Launch the provided URL
+	 */
 	public void launchUrl(String url) {
 		driver.get(url);
 		Assert.assertEquals(driver.getCurrentUrl(), url);
 		logger.info(url + " is launched succesfully");
 	}
 
+	/**
+	 * Click on any provided element
+	 * @param <T>
+	 * @param element
+	 */
 	public <T extends WebElement> void click(T element) {
 		try {
 			element.click();
@@ -48,6 +56,13 @@ public class CommonMethods extends BasePage {
 		logger.info(element + " is clicked successfully");
 	}
 
+	/**
+	 * Wait for provided element to contain a specific text
+	 * @param <T>
+	 * @param element
+	 * @param text
+	 * @param timeoutSeconds
+	 */
 	public <T extends WebElement> void waitForElementContainText(T element, String text, Integer timeoutSeconds) {
 		boolean check = false;
 		for (int i = 0; i < timeoutSeconds; i++) {
