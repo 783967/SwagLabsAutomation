@@ -1,4 +1,4 @@
-package swaglabs.TestComponents;
+package swaglabs.components;
 
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
@@ -17,6 +17,10 @@ public class DriverFactory {
 		return driver;
 	}
 		
+	/**
+	 * Initialize the driver
+	 * @throws IOException
+	 */
 	@BeforeTest
 	public void initializeDriver() throws IOException
 	{
@@ -38,6 +42,9 @@ public class DriverFactory {
 		driver.manage().window().maximize();
 	}
 	
+	/**
+	 * Quit the driver
+	 */
 	@AfterTest()
 	public void tearDown()
 	{

@@ -1,4 +1,4 @@
-package swaglabs.TestComponents;
+package swaglabs.components;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;

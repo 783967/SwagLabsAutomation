@@ -1,4 +1,4 @@
-package swaglabs.TestComponents;
+package swaglabs.components;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
@@ -9,7 +9,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import swaglabs.resources.ExtentReporterNG;
+import swaglabs.reports.ExtentReporterNG;
 
 public class Listeners extends BasePage implements ITestListener{
 	WebDriver driver = new DriverFactory().getDriver();

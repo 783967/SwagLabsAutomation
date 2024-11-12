@@ -1,9 +1,9 @@
-package swaglabs.ai.tests;
+package swaglabs.tests;
 
 import org.testng.annotations.Test;
 
-import swaglabs.TestComponents.DriverFactory;
-import swaglabs.stepDefinitions.HomePageSteps;
+import swaglabs.components.DriverFactory;
+import swaglabs.steps.HomePageSteps;
 
 public class validateHomePageTest extends DriverFactory {
 
