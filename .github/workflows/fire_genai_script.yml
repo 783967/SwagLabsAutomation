@@ -1,0 +1,17 @@
+name: Trigger the Generative AI code as soon as PR is raised for any new Automation Scripts
+
+on:
+ pull_request:
+   types: [opened, synchronize]
+ 
+jobs:
+  trigger-genai-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: send repository dispatch to the GenAI repo
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{secrets.REPO_ACCESS_TOKEN}}
+          repository: 783967/GenAI-AutoScriptReviewer
+          event-type: pr-raised
