@@ -1,7 +1,6 @@
 package swaglabs.tests;
 
 import org.testng.annotations.Test;
-
 import swaglabs.components.DriverFactory;
 import swaglabs.steps.HomePageSteps;
 
