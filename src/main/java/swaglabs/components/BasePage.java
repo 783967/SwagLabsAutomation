@@ -44,6 +44,8 @@ public class BasePage {
 		return value;
 	}
 
+	/**
+	 * Get SCreenshot * @param testCaseName * @param driver	 * @return	 * @throws IOException	 */
 	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
