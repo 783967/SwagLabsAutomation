@@ -1,1 +1,6 @@
-/target/
+# Ignore all files
+*
+
+# But not these files...
+!*.java
+!*.properties
