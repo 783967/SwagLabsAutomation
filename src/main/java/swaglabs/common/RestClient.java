@@ -67,7 +67,7 @@ public class RestClient {
 		CloseableHttpClient httpClient = HttpClients.custom().setDefaultRequestConfig(config).build();
 
 		// Base URI
-		RestAssured.baseURI = url; // Replace with your URL
+		RestAssured.baseURI = url;
 
 		// Request body
 		JSONObject requestBody = new JSONObject();
