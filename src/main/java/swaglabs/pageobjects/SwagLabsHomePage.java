@@ -33,5 +33,8 @@ public class SwagLabsHomePage{
 	
 	@FindBy(css = ".inventory_item_price")
 	public List<WebElement> productPrice;
+	
+	@FindBy(css = ".shopping_cart_link")
+	public WebElement goToCartIcon;
 }
 	

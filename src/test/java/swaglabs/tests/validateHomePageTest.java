@@ -6,6 +6,8 @@ import swaglabs.components.DriverFactory;
 import swaglabs.steps.HomePageSteps;
 
 public class validateHomePageTest extends DriverFactory {
+	
+	//Delete below
 
 	@Test
 	public void validateUserLandedInSwagLabsHomePage() {
