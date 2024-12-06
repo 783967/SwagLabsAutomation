@@ -19,6 +19,8 @@ public class CommonMethods extends BasePage {
 
 	private static WebDriver driver;
 	private static Logger logger;
+	private int         x;
+	int a, b,   c,  d;
 		
 	@SuppressWarnings("static-access")
 	public CommonMethods() {
@@ -129,5 +131,4 @@ public class CommonMethods extends BasePage {
 	public void TestTheSwagLabsByLoginIntoItAndThenValidateUserIsSuccessfullyLandedIntoItAfterThatLogoutFromAppilication() {
 		
 	}
-	
 }
