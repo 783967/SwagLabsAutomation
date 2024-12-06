@@ -1,6 +1,8 @@
 package swaglabs.common;
 
 import java.time.Duration;
+import java.util.List;
+import java.util.stream.IntStream;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
@@ -12,16 +14,13 @@ import org.testng.Assert;
 
 import swaglabs.components.BasePage;
 import swaglabs.components.DriverFactory;
-import swaglabs.pageobjects.LoginPage;
 import swaglabs.pageobjects.SwagLabsHomePage;
 
 public class CommonMethods extends BasePage {
 
 	private static WebDriver driver;
 	private static Logger logger;
-	private int         x;
-	int a, b,   c,  d;
-		
+
 	@SuppressWarnings("static-access")
 	public CommonMethods() {
 		try {
@@ -46,6 +45,7 @@ public class CommonMethods extends BasePage {
 
 	/**
 	 * Click on any provided element
+	 * 
 	 * @param <T>
 	 * @param element
 	 */
@@ -61,12 +61,14 @@ public class CommonMethods extends BasePage {
 
 	/**
 	 * Wait for provided element to contain a specific text
+	 * 
 	 * @param <T>
 	 * @param element
 	 * @param text
 	 * @param timeoutSeconds
 	 */
-	public static <T extends WebElement> void waitForElementContainText(T element, String text, Integer timeoutSeconds) {
+	public <T extends WebElement> void waitForElementContainText(T element, String text,
+			Integer timeoutSeconds) {
 		boolean check = false;
 		for (int i = 0; i < timeoutSeconds; i++) {
 			try {
@@ -82,22 +84,16 @@ public class CommonMethods extends BasePage {
 		logger.info(element.getText() + " is present.");
 	}
 
-	public void logInSwagLabs(String userName, String passWord) {
-		LoginPage loginPage = new LoginPage(driver);
-		waitForElementContainText(loginPage.swagLabText, "Swag Labs", 20);
-		loginPage.userName.sendKeys(userName);
-		loginPage.passWord.sendKeys(passWord);
-		click(loginPage.logInButton);
-
-		SwagLabsHomePage swagLabsHomePage = new SwagLabsHomePage(driver);
-		waitForElementContainText(swagLabsHomePage.logoHeading, "Swag Labs", 10);
-		logger.info("Logged in to SwagLabs");
-	}
-
+	/**
+	 * Add and remove from cart and verify cart number
+	 * @param <T>
+	 * @param addToCartElement
+	 * @param removeFromCartElement
+	 */
 	public <T extends WebElement> void addToCartAndVerifyItemAdded(T addToCartElement, T removeFromCartElement) {
 		SwagLabsHomePage swagLabsHomePage = new SwagLabsHomePage(driver);
 		int cartCount = 0;
-		if (!swagLabsHomePage.emptyCartBadge.getText().isEmpty())
+		if (!swagLabsHomePage.getValueFromEmptyCartBadge().isEmpty())
 			cartCount = Integer.parseInt(swagLabsHomePage.emptyCartBadge.getText());
 
 		click(addToCartElement);
@@ -105,30 +101,26 @@ public class CommonMethods extends BasePage {
 		logger.info("Element is added into Cart and Cart Value is " + cartCount);
 		waitForElementContainText(swagLabsHomePage.nonEmptyCartBadge, String.valueOf(cartCount + 1), 10);
 	}
-	
-	public static void loginPageButton(String buttonType) {
-		long l=3000000000l;
-		SwagLabsHomePage swagLabsHomePage = new SwagLabsHomePage(driver);
-		if(buttonType.equalsIgnoreCase("Login")) waitForElementContainText(swagLabsHomePage.logoHeading, "Swag Labs", 10);
-		try {
-			loginPageCancelButton(1);
-		  } catch (Exception e) {}
-		
-		
-	}
-	//Test
-	//Test1
-	//Test2
-	public static void loginPageCancelButton(int input) {
-		switch(input) {
-		case 1:
-		case 2:
-		case 3:
-			System.out.println("No default");
+
+	/**
+	 * Verify Products are sorted in provided order
+	 * @param sortingOrder
+	 * @param productPrices
+	 */
+	public void verifyProductsAreSorted(String sortingOrder, List<String> productPrices) {
+		if (sortingOrder.equalsIgnoreCase("asc")) {
+			boolean isAscending = IntStream.range(0, productPrices.size() - 1)
+					.allMatch(i -> Double.parseDouble(productPrices.get(i).replace("$", "").trim()) <= Double
+							.parseDouble(productPrices.get(i + 1).replace("$", "").trim()));
+			Assert.assertTrue(isAscending, "Products are sorting in ascending order");
+			logger.info("Products are sorting in ascending order");
+		} else {
+			boolean isDescending = IntStream.range(0, productPrices.size() - 1)
+					.allMatch(i -> Double.parseDouble(productPrices.get(i).replace("$", "").trim()) >= Double
+							.parseDouble(productPrices.get(i + 1).replace("$", "").trim()));
+			Assert.assertTrue(isDescending, "Products are sorting in Descending order");
+			logger.info("Products are sorting in Descending order");
 		}
-	}
-	
-	public void TestTheSwagLabsByLoginIntoItAndThenValidateUserIsSuccessfullyLandedIntoItAfterThatLogoutFromAppilication() {
-		
+
 	}
 }
