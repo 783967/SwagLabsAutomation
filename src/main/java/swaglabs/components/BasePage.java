@@ -30,7 +30,7 @@ public class BasePage {
 	 * @param propertyKey
 	 * @return
 	 */
-	public String getPropertyValue(String propertyKey) {
+	public static String getPropertyValue(String propertyKey) {
 		String value = "";
 		try {
 			Properties prop = new Properties();
