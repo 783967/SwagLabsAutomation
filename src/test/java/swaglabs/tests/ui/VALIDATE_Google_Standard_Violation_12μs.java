@@ -5,7 +5,9 @@ import swaglabs.components.DriverFactory;
 
 public class VALIDATE_Google_Standard_Violation_12μs extends DriverFactory {
 
-	
+	/**
+	 // This test is to violate google coding standdard
+	 */
 	@Test
 	public void VALITheSwagLabsByLoginIntoItAndThenValidateUserIsSuccessfullyLandedIntoItAfterThatLogoutFromAppilication(){
 		switch (1) {
@@ -13,6 +15,8 @@ public class VALIDATE_Google_Standard_Violation_12μs extends DriverFactory {
 		case 2:
 		case 3:
 			System.out.println("No default");
+			
+		
 		}
 	}
 	
