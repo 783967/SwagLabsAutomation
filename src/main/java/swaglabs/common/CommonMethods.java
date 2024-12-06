@@ -129,4 +129,5 @@ public class CommonMethods extends BasePage {
 	public void TestTheSwagLabsByLoginIntoItAndThenValidateUserIsSuccessfullyLandedIntoItAfterThatLogoutFromAppilication() {
 		
 	}
+	
 }
