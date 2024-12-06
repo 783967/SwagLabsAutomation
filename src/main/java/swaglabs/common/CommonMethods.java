@@ -64,7 +64,7 @@ public class CommonMethods extends BasePage {
 	 * @param text
 	 * @param timeoutSeconds
 	 */
-	public <T extends WebElement> void waitForElementContainText(T element, String text, Integer timeoutSeconds) {
+	public static <T extends WebElement> void waitForElementContainText(T element, String text, Integer timeoutSeconds) {
 		boolean check = false;
 		for (int i = 0; i < timeoutSeconds; i++) {
 			try {
@@ -104,7 +104,7 @@ public class CommonMethods extends BasePage {
 		waitForElementContainText(swagLabsHomePage.nonEmptyCartBadge, String.valueOf(cartCount + 1), 10);
 	}
 	
-	public void loginPageButton(String buttonType) {
+	public static void loginPageButton(String buttonType) {
 		long l=3000000000l;
 		SwagLabsHomePage swagLabsHomePage = new SwagLabsHomePage(driver);
 		if(buttonType.equalsIgnoreCase("Login")) waitForElementContainText(swagLabsHomePage.logoHeading, "Swag Labs", 10);
