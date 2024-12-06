@@ -19,6 +19,8 @@ public class CommonMethods extends BasePage {
 
 	private static WebDriver driver;
 	private static Logger logger;
+	private int         x;
+	int a, b,   c,  d;
 		
 	@SuppressWarnings("static-access")
 	public CommonMethods() {
@@ -63,7 +65,7 @@ public class CommonMethods extends BasePage {
 	 * @param text
 	 * @param timeoutSeconds
 	 */
-	public <T extends WebElement> void waitForElementContainText(T element, String text, Integer timeoutSeconds) {
+	public static <T extends WebElement> void waitForElementContainText(T element, String text, Integer timeoutSeconds) {
 		boolean check = false;
 		for (int i = 0; i < timeoutSeconds; i++) {
 			try {
@@ -100,6 +102,32 @@ public class CommonMethods extends BasePage {
 		waitForElementContainText(removeFromCartElement, "Remove", 10);
 		logger.info("Element is added into Cart and Cart Value is " + cartCount);
 		waitForElementContainText(swagLabsHomePage.nonEmptyCartBadge, String.valueOf(cartCount + 1), 10);
+	}
+	
+	public static void loginPageButton(String buttonType) {
+		long l=3000000000l;
+		SwagLabsHomePage swagLabsHomePage = new SwagLabsHomePage(driver);
+		if(buttonType.equalsIgnoreCase("Login")) waitForElementContainText(swagLabsHomePage.logoHeading, "Swag Labs", 10);
+		try {
+			loginPageCancelButton(1);
+		  } catch (Exception e) {}
+		
+		
+	}
+	//Test
+	//Test1
+	//Test2
+	public static void loginPageCancelButton(int input) {
+		switch(input) {
+		case 1:
+		case 2:
+		case 3:
+			System.out.println("No default");
+		}
+	}
+	
+	public void TestTheSwagLabsByLoginIntoItAndThenValidateUserIsSuccessfullyLandedIntoItAfterThatLogoutFromAppilication() {
+		
 	}
 
 }
