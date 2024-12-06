@@ -37,6 +37,7 @@ public class CommonMethods extends BasePage {
 	 */
 	public void launchUrl(String url) {
 		driver.get(url);
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		Assert.assertEquals(driver.getCurrentUrl(), url);
 		logger.info(url + " is launched succesfully");
 	}
@@ -81,6 +82,7 @@ public class CommonMethods extends BasePage {
 
 	public void logInSwagLabs(String userName, String passWord) {
 		LoginPage loginPage = new LoginPage(driver);
+		waitForElementContainText(loginPage.swagLabText, "Swag Labs", 20);
 		loginPage.userName.sendKeys(userName);
 		loginPage.passWord.sendKeys(passWord);
 		click(loginPage.logInButton);
@@ -101,5 +103,4 @@ public class CommonMethods extends BasePage {
 		logger.info("Element is added into Cart and Cart Value is " + cartCount);
 		waitForElementContainText(swagLabsHomePage.nonEmptyCartBadge, String.valueOf(cartCount + 1), 10);
 	}
-
 }

@@ -21,4 +21,7 @@ public class LoginPage {
 	@FindBy(css = "#login-button")
 	public WebElement logInButton;
 	
+	@FindBy(css = ".login_logo")
+	public WebElement swagLabText;
+	
 }
