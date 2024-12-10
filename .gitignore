@@ -1,1 +1,11 @@
+# Ignore all files
+*
+
+# But not these files...
+!*/
+!*.java
+!*.properties
+
+# Exclude all items from target and test-output folders
 /target/
+/test-output/

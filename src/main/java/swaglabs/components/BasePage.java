@@ -30,7 +30,7 @@ public class BasePage {
 	 * @param propertyKey
 	 * @return
 	 */
-	public String getPropertyValue(String propertyKey) {
+	public static String getPropertyValue(String propertyKey) {
 		String value = "";
 		try {
 			Properties prop = new Properties();
@@ -44,6 +44,8 @@ public class BasePage {
 		return value;
 	}
 
+	/**
+	 * Get SCreenshot * @param testCaseName * @param driver	 * @return	 * @throws IOException	 */
 	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
