@@ -12,7 +12,7 @@ import groovyjarjarantlr4.v4.runtime.misc.NotNull;
 import swaglabs.common.CommonMethods;
 import swaglabs.components.DriverFactory;
 
-public class VALIDATE_Google_Standard_Violation_12μs extends DriverFactory {
+public class VALIDATE_Google_Standard_Violation_12s extends DriverFactory {
 
 	/**
 	 // This test is to violate google coding standdard
