@@ -43,11 +43,21 @@ public class VALIDATE_Google_Standard_Violation_12s extends DriverFactory {
 		if(1>0)
 			Assert.assertEquals(false, false);
 		DriverFactory d = new DriverFactory();
-		d.getDriver();
-		 try {
+		try {
 			    new CommonMethods().addToCartAndVerifyItemAdded(null, null);
 			  } catch (Exception e) {}
 		    new CommonMethods().click(null); new CommonMethods().launchUrl(null);
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+
+			while(1>0) {
+				d.getDriver();
+			}
 	}
 	
 	@Deprecated	@NotNull @Override public String toString() {return null;};
@@ -62,4 +72,4 @@ public class VALIDATE_Google_Standard_Violation_12s extends DriverFactory {
 		System.out.println("No Java Docs should be used");
 	}
 	
-}
+            }
