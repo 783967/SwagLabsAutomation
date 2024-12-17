@@ -47,18 +47,10 @@ public class VALIDATE_Google_Standard_Violation_12s extends DriverFactory {
 			    new CommonMethods().addToCartAndVerifyItemAdded(null, null);
 			  } catch (Exception e) {}
 		    new CommonMethods().click(null); new CommonMethods().launchUrl(null);
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-
-			while(1>0) {
+		       while(1>0) {
 				d.getDriver();
-			}
-	}
+		       										}
+	                      }
 	
 	@Deprecated	@NotNull @Override public String toString() {return null;};
 	

@@ -20,7 +20,7 @@ public class LoginPage {
 		logger = BasePage.getLogger();
 	}
 
-	@FindBy(css = "#user-name")
+	@FindBy(css="#user-name")
 	public WebElement userName;
 
 	@FindBy(css = "#password")
@@ -32,11 +32,7 @@ public class LoginPage {
 	@FindBy(css = ".login_logo")
 	public WebElement swagLabText;
 
-	/**
-	 * Set user name
-	 * 
-	 * @param value
-	 */
+	
 	public void setUserName(String value) {
 		userName.sendKeys(value);
 		logger.info(value + " is set in User Name");
