@@ -20,7 +20,6 @@ public class VALIDATE_Google_Standard_Violation_12μs extends DriverFactory {
 	
 	private int         x;
 	int a, b,   c,  d;
-	String XMLHTTPRequest="";
 	String[][] u = {  {"foo"}   };
 	static public final String va = null;
 	Long l = 43543543l;
