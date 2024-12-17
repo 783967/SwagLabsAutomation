@@ -32,7 +32,7 @@ public class VALIDATE_Google_Standard_Violation_12μs extends DriverFactory {
 	 */
 
 	@Test
-	public void VALITheSwagLabsByLoginIntoItAndThenValidateUserIsSuccessfullyLandedIntoItAfterThatLogoutFromAppilication(){
+	public void valiTheSwagLabsByLoginIntoItAndThenValidateUserIsSuccessfullyLandedIntoItAfterThatLogoutFromApplication(){
 		switch (1) {
 		case 1:
 		case 2:
